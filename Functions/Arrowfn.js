@@ -38,3 +38,7 @@ const upperizedNamess = ['Shalu', 'Anup', 'Anupam','Anu','Navee'].map( name => {
   return `${name} has ${name.length} characters in their name`;
 });
 console.log(upperizedNamess);
+
+const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(square => { return square * square;});
+
+console.log(...squares);
