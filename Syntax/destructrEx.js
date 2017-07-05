@@ -8,7 +8,7 @@
 
 //destructring value from  an object
 
-/*const gemstone = {
+const gemstone = {
   type: 'quartz',
   color: 'rose',
   karat: 21.29
@@ -17,7 +17,7 @@
 const {type, color, karat} = gemstone;
 
 console.log(type, color, karat);
-*/
+
 /*const circle = {
   radius: 10,
   color: 'orange',
@@ -48,10 +48,37 @@ const colors = `List of Colors
 console.log(colors);
 
 //object literal
-
-let type = 'quartz';
+/*let type = 'quartz';
 let color='rose';
 let carat=21.25;
 
 let gemstone={ type , color , carat};
 console.log(gemstone);
+*/
+
+
+const members = new Map();
+
+members.set('Evelyn', 75.68);
+members.set('Liam', 20.16);
+members.set('Sophia', 0);
+members.set('Marcus', 10.25);
+
+for (const [key ,value] of members) {
+    console.log(key, value);
+
+}
+
+
+let obj = { first: 'Jane', last: 'Doe' };
+let { first: f, last: l } = obj;
+console.log(f,l);
+
+// destructering of array using for of loop
+//const map = new Map().set(false, 'no').set(true, 'yes');
+const map = new Map();
+map.set(1,'one');
+map.set(2,'two');
+for (const [key, value] of map) {
+  console.log(`${key} ${value}`);
+}
