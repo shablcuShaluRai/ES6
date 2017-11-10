@@ -24,3 +24,6 @@ let breakChocolates = (n,m) => {
   console.log(res);
 }
 breakChocolates(5,5)
+
+let breakChoco = (n,m) => Math.max(0, n*m-1)
+console.log(breakChoco(6,5));
