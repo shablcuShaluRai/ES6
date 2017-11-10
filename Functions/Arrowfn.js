@@ -33,12 +33,42 @@ orderIceCream('chocolate', 'waffle');
 //If you need more than just a single line of code in your arrow function's body, then you can use the "block body syntax".
 
 
-const upperizedNamess = ['Shalu', 'Anup', 'Anupam','Anu','Navee'].map( name => {
+const upperizedNamess = ['Shalu', 'Anup', 'Anupam','Anu','Navee','Ayush'].map( name => {
   name = name.toUpperCase();
   return `${name} has ${name.length} characters in their name`;
 });
 console.log(upperizedNamess);
 
-const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(square => { return square * square;});
+const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(square =>  square * square);
 
 console.log(...squares);
+
+//const f = x => (x % 2) === 0 ? x : 0;
+// const f = x => ((x % 2) === 0 ? x : 0);
+// const f = (x => (x % 2)) === 0 ? x : 0;
+// console.log(5);
+//
+// const f = (x => ((x % 2) === 0)) ? x : 0;
+// console.log(typeof f);
+
+// var matchObj =
+//     /^(\d\d\d\d)-(\d\d)-(\d\d)$/
+//     .exec('2999-12-31');
+// var year = matchObj[1];
+// var month = matchObj[2];
+// var day = matchObj[3];
+// console.log(matchObj);
+
+// const [, year, month, day] =
+//     /^(\d\d\d\d)-(\d\d)-(\d\d)$/
+//     .exec('2999-12-31');
+//     console.log([, year, month, day]);
+//
+//
+//     const add = (x,y) =>  x+y
+//     const plus1 = add.bind(undefined, 1);
+//   //  const plus1 = y => add(1, y);
+//     console.log(plus1(5));
+
+let arr = ['a', 'b', 'c'];
+arr.forEach(elm  =>  console.log(elm))
